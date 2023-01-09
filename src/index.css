@@ -41,7 +41,7 @@ img{
     display: flex;
     margin-left: 150px;
 }
-@media (max-width:325px) {
+@media (max-width:649px) {
     .mainDiv{
         flex-direction: column;
     }
