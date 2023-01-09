@@ -41,7 +41,7 @@ img{
     display: flex;
     margin-left: 150px;
 }
-@media (max-width:649px) {
+@media  (max-width:469px) {
     .mainDiv{
         flex-direction: column;
     }
@@ -53,9 +53,11 @@ img{
         display: block;
         max-width: 400px;
         height: 300px;
-        margin-left: -160px;
+        margin-left: -130px;
+        margin-top: 100px;
+        margin-bottom: 50px;
     }
     button{
-        margin-left:120px;
+        margin-left:-30px;
     }
 }
