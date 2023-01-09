@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+.mainBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    height: 20px;
+    margin-top: 15px;
+    border: white 1px solid;
+    border-radius: 2px;
+}
+input::placeholder{
+    color: gray;
+}
+.hey h1{
+    margin-left: 20px;
+}
+h1 a{
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+}
+span{
+        font-family: Inconsolata;
+}
+.loginBox{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 33, 33);
+    max-width: 200px;
+    height: 240px;
+    padding: 25px;
+    border-radius: 15px;
+    align-items: center;
+}
+.button{
+    max-width: 84%;
+    height: 30px;
+    border: white 1px solid;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-left: 100px;
+}
+.hiddenpic{
+    display: none;
+}
+.img{
+    width: 50%;
+    height: 55%;
+}
+h2{
+    background-color: rgb(33, 33, 33);
+    color: aliceblue;
+}
+@media only screen and (max-width:649px){
+    .mainBox{
+        flex-direction: column;
+    }
+    .hiddenpic{
+        display: block;
+        width: 250px;
+        height: 200px;
+        margin-top: 40px;
+    }
+    .img{
+        display: none;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .loginBox{
+        margin-top: -0px;
+        max-width: 120px;
+         height: 150px;
+    }
+    input{
+        height: 15px;
+        margin-top: 12px;
+        width: 130px;
+        font-size: 10px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    
+    span{
+        font-size: 10px;
+    }
+    .button{
+        max-width: 110%;
+        height: 20px;
+        margin-top: 12px;
+        font-size: 10px;
+    }
+}

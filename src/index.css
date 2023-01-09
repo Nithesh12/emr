@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Unbounded');
+h1{
+    font-family: unbounded;
+    color: rgb(33, 33, 33);
+    margin-left: -100px;
+    position:fixed;
 }
+h1::before{
+    color: #59BD86;
+    content: "Health";
+}
+button{
+color: white;
+background-color: #59BD86;
+text-decoration: none;
+font-size: 20px;
+width: 220px;
+height: 80px;
+border:1px solid white;
+margin-right:100px;
+border-radius: 15px;
+margin-top: 20px;
+cursor:pointer;
+}
+.doc{
+    background-color: #198754;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.primaryDiv{
+    display: grid;
+    place-content: center;
+}
+img{
+    width:750px;
+    height: 550px;
+}
+.pics{
+    display: none;
+}
+.mainDiv{
+    display: flex;
+    margin-left: 150px;
+}
+@media only screen and (max-width:325px) {
+    .mainDiv{
+        flex-direction: column;
+    }
+    .picture{
+        display: none;
+    }
+    .pics{
+        margin-top: 80px;
+        display: block;
+        max-width: 400px;
+        height: 300px;
+        margin-left: -160px;
+    }
+    button{
+        margin-left:120px;
+    }
 }
